@@ -56,10 +56,9 @@ int main()
 } //end main
 
 bool collision(int x, int y) {
-    if (x < 400 && x + 100 > 200)
+    if (x < 400 && x + 100 > 200 && y < 400 && y + 100 > 200)
         return 1;
-    else if (y < 400 && y + 100 > 200)
-        return 1;
+
     else
         return 0;
 }
